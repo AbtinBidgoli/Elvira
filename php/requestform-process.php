@@ -1,38 +1,38 @@
 <?php
 $errorMSG = "";
 
-if (empty($_POST["name"])) {
+if (empty($_POST["rname"])) {
     $errorMSG = "Name is required ";
 } else {
-    $name = $_POST["name"];
+    $name = $_POST["rname"];
 }
 
-if (empty($_POST["email"])) {
+if (empty($_POST["remail"])) {
     $errorMSG = "Email is required ";
 } else {
-    $email = $_POST["email"];
+    $email = $_POST["remail"];
 }
 
-if (empty($_POST["phone"])) {
+if (empty($_POST["rphone"])) {
     $errorMSG = "Phone is required ";
 } else {
-    $phone = $_POST["phone"];
+    $phone = $_POST["rphone"];
 }
 
-if (empty($_POST["select"])) {
+if (empty($_POST["rselect"])) {
     $errorMSG = "Select is required ";
 } else {
-    $select = $_POST["select"];
+    $select = $_POST["rselect"];
 }
 
-if (empty($_POST["terms"])) {
+if (empty($_POST["rterms"])) {
     $errorMSG = "Terms is required ";
 } else {
-    $terms = $_POST["terms"];
+    $terms = $_POST["rterms"];
 }
 
 $EmailTo = "mateo@elvira.media";
-$Subject = "New meeting request from Elvira Media, LLC landing page";
+$Subject = "New meeting request from Elvira Media, LLC ~ Request Form";
 
 // prepare email body text
 $Body = "";
