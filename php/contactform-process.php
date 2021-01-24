@@ -19,6 +19,12 @@ if (empty($_POST['cemail'])) {
     $email = $_POST['cemail'];
 }
 
+if (empty($_POST['cphone'])) {
+    $errorMSG = "Phone is required ";
+} else {
+    $phone = $_POST['cphone'];
+}
+
 if (empty($_POST['csize'])) {
     $errorMSG = "Approximate Size of Business is required ";
 } else {
@@ -29,6 +35,12 @@ if (empty($_POST['cbudget'])) {
     $errorMSG = "Annual Marketing Budget is required ";
 } else {
     $budget = $_POST['cbudget'];
+}
+
+if (empty($_POST['curl'])) {
+    $errorMSG = "Phone is prefered ";
+} else {
+    $url = $_POST['curl'];
 }
 
 if (empty($_POST['cmessage'])) {
@@ -57,11 +69,17 @@ $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
+$Body .= "Phone: ";
+$Body .= $phone;
+$Body .= "\n";
 $Body .= "Approximate Company size: ";
 $Body .= $size;
 $Body .= "\n";
 $Body .= "Annual Marketing Budget: ";
 $Body .= $budget;
+$Body .= "\n";
+$Body .= "URL: ";
+$Body .= $url;
 $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
