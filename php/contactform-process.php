@@ -1,40 +1,67 @@
 <?php
 $errorMSG = "";
 
-if (empty($_POST["name"])) {
+if (empty($_POST["companyname"])) {
+    $errorMSG = "Company is required ";
+} else {
+    $compname = $_POST["companyname"];
+}
+
+if (empty($_POST["cname"])) {
     $errorMSG = "Name is required ";
 } else {
-    $name = $_POST["name"];
+    $name = $_POST["cname"];
 }
 
-if (empty($_POST["email"])) {
+if (empty($_POST["cemail"])) {
     $errorMSG = "Email is required ";
 } else {
-    $email = $_POST["email"];
+    $email = $_POST["cemail"];
 }
 
-if (empty($_POST["message"])) {
+if (empty($_POST["csize"])) {
+    $errorMSG = "Approximate Size of Business is required ";
+} else {
+    $size = $_POST["csize"];
+}
+
+if (empty($_POST["cbudget"])) {
+    $errorMSG = "Annual Marketing Budget is required ";
+} else {
+    $budget = $_POST["cbudget"];
+}
+
+if (empty($_POST["cmessage"])) {
     $errorMSG = "Message is required ";
 } else {
-    $message = $_POST["message"];
+    $message = $_POST["cmessage"];
 }
 
-if (empty($_POST["terms"])) {
+if (empty($_POST["cterms"])) {
     $errorMSG = "Terms is required ";
 } else {
-    $terms = $_POST["terms"];
+    $terms = $_POST["cterms"];
 }
 
 $EmailTo = "mateo@elvira.media";
-$Subject = "New message from Elvira Media, LLC landing page";
+$Subject = "New message from Elvira Media, LLC ~ Contact Form";
 
 // prepare email body text
 $Body = "";
+$Body .= "Company Name: ";
+$Body .= $compname;
+$Body .= "\n";
 $Body .= "Name: ";
 $Body .= $name;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
+$Body .= "\n";
+$Body .= "Approximate Company size: ";
+$Body .= $size;
+$Body .= "\n";
+$Body .= "Annual Marketing Budget: ";
+$Body .= $budget;
 $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
