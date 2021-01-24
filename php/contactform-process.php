@@ -1,46 +1,46 @@
 <?php
 $errorMSG = "";
 
-if (empty($_POST["companyname"])) {
+if (empty($_POST['companyname'])) {
     $errorMSG = "Company is required ";
 } else {
-    $compname = $_POST["companyname"];
+    $compname = $_POST['companyname'];
 }
 
-if (empty($_POST["cname"])) {
+if (empty($_POST['cname'])) {
     $errorMSG = "Name is required ";
 } else {
-    $name = $_POST["cname"];
+    $name = $_POST['cname'];
 }
 
-if (empty($_POST["cemail"])) {
+if (empty($_POST['cemail'])) {
     $errorMSG = "Email is required ";
 } else {
-    $email = $_POST["cemail"];
+    $email = $_POST['cemail'];
 }
 
-if (empty($_POST["csize"])) {
+if (empty($_POST['csize'])) {
     $errorMSG = "Approximate Size of Business is required ";
 } else {
-    $size = $_POST["csize"];
+    $size = $_POST['csize'];
 }
 
-if (empty($_POST["cbudget"])) {
+if (empty($_POST['cbudget'])) {
     $errorMSG = "Annual Marketing Budget is required ";
 } else {
-    $budget = $_POST["cbudget"];
+    $budget = $_POST['cbudget'];
 }
 
-if (empty($_POST["cmessage"])) {
+if (empty($_POST['cmessage'])) {
     $errorMSG = "Message is required ";
 } else {
-    $message = $_POST["cmessage"];
+    $message = $_POST['cmessage'];
 }
 
-if (empty($_POST["cterms"])) {
-    $errorMSG = "Terms is required ";
+if (empty($_POST['cterms'])) {
+    $errorMSG = "Privacy Policy & Terms & Conditions are required ";
 } else {
-    $terms = $_POST["cterms"];
+    $terms = $_POST['cterms'];
 }
 
 $EmailTo = "mateo@elvira.media";
