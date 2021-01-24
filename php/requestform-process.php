@@ -1,34 +1,34 @@
 <?php
 $errorMSG = "";
 
-if (empty($_POST["rname"])) {
+if (empty($_POST['rname'])) {
     $errorMSG = "Name is required ";
 } else {
-    $name = $_POST["rname"];
+    $name = $_POST['rname'];
 }
 
-if (empty($_POST["remail"])) {
+if (empty($_POST['remail'])) {
     $errorMSG = "Email is required ";
 } else {
-    $email = $_POST["remail"];
+    $email = $_POST['remail'];
 }
 
-if (empty($_POST["rphone"])) {
+if (empty($_POST['rphone'])) {
     $errorMSG = "Phone is required ";
 } else {
-    $phone = $_POST["rphone"];
+    $phone = $_POST['rphone'];
 }
 
-if (empty($_POST["rselect"])) {
-    $errorMSG = "Select is required ";
+if (empty($_POST['rselect'])) {
+    $errorMSG = "Selection is required ";
 } else {
-    $select = $_POST["rselect"];
+    $select = $_POST['rselect'];
 }
 
-if (empty($_POST["rterms"])) {
+if (empty($_POST['rterms'])) {
     $errorMSG = "Terms is required ";
 } else {
-    $terms = $_POST["rterms"];
+    $terms = $_POST['rterms'];
 }
 
 $EmailTo = "mateo@elvira.media";
