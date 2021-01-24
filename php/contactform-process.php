@@ -75,10 +75,14 @@ $success = mail($EmailTo, $Subject, $Body, "From:".$email);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
-   echo "success";
+   echo <script> alert('Message Sent');
+       window.location.href='index.html';</script>
+       "success";
 }else{
     if($errorMSG == ""){
-        echo "Something went wrong :(";
+        echo <script> alert('Something went wrong :(');
+       window.location.href='index.html';</script>
+           "Something went wrong :(";
     } else {
         echo $errorMSG;
     }
