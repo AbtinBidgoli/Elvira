@@ -892,6 +892,11 @@
                     <!-- Contact Form -->
                     <form id="contactForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
+                            <input type="text" class="form-control-input" id="companyname" required>
+                            <label class="label-control" for="companyname">Company</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+			<div class="form-group">
                             <input type="text" class="form-control-input" id="cname" required>
                             <label class="label-control" for="cname">Name</label>
                             <div class="help-block with-errors"></div>
@@ -901,9 +906,19 @@
                             <label class="label-control" for="cemail">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
+			<div class="form-group">
+                            <input type="number" class="form-control-input" id="csize" required>
+                            <label class="label-control" for="csize">Approximate Size of Business</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+			<div class="form-group">
+                            <input type="number" class="form-control-input" id="cbudget" required>
+                            <label class="label-control" for="cbudget">Annual Marketing Budget</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
                         <div class="form-group">
                             <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
+                            <label class="label-control" for="cmessage">How Can We Help</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group checkbox">
