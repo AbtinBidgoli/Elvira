@@ -19,6 +19,12 @@ if (empty($_POST['rphone'])) {
     $phone = $_POST['rphone'];
 }
 
+if (empty($_POST['rurl'])) {
+    $errorMSG = "URL is prefered ";
+} else {
+    $url = $_POST['rurl'];
+}
+
 if (empty($_POST['rselect'])) {
     $errorMSG = "Selection is required ";
 } else {
@@ -44,6 +50,9 @@ $Body .= $email;
 $Body .= "\n";
 $Body .= "Phone: ";
 $Body .= $phone;
+$Body .= "\n";
+$Body .= "URL: ";
+$Body .= $url;
 $Body .= "\n";
 $Body .= "Package: ";
 $Body .= $select;
