@@ -38,7 +38,7 @@ if (empty($_POST['cbudget'])) {
 }
 
 if (empty($_POST['curl'])) {
-    $errorMSG = "Phone is prefered ";
+    $errorMSG = "URL is prefered ";
 } else {
     $url = $_POST['curl'];
 }
