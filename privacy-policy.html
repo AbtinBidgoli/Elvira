@@ -273,7 +273,7 @@
 
                             <!-- Privacy Form -->
                             <div class="form-container">
-                                <form action="pform.php" method="POST" id="privacyForm" data-toggle="validator" data-focus="false">
+                                <form name="pcontact" method="POST" data-netlify="true" id="privacyForm" data-toggle="validator" data-focus="false">
                                     <div class="form-group">
                                         <input type="text" class="form-control-input" id="pname" name="pname" required>
                                         <label class="label-control" for="pname">Name</label>
@@ -294,6 +294,10 @@
                                     </div>
                                     <div class="form-group checkbox">
                                         <input type="checkbox" id="pterms" name="pterms" value="Agreed-to-Terms" required>I have read and agree to Elvira Media, LLC's <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+					    <div data-netlify-recaptcha="true"></div>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
