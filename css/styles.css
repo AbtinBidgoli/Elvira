@@ -893,6 +893,14 @@ input[type='checkbox'] {
 	margin-bottom: 4rem;
 }
 
+.basic-1 .image-container {
+	margin-bottom: 2.25rem;
+}
+
+.basic-1 .image-container img {
+	border-radius: 0.5rem;
+}
+
 .basic-1 h2 {
 	margin-bottom: 1.375rem;
 }
@@ -911,7 +919,11 @@ input[type='checkbox'] {
 }
 
 .basic-2 .image-container {
-	margin-bottom: 4rem;
+	margin-bottom: 2.25rem;
+}
+
+.basic-2 .image-container img {
+	border-radius: 0.5rem;
 }
 
 .basic-2 h2 {
