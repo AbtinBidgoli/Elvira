@@ -1214,12 +1214,12 @@ input[type='checkbox'] {
 	border-radius: 0.5rem;
 }
 
-.basic-3 .video-wrapper {
+.basic-3 .cards-1 .video-wrapper {
 	position: relative;
 }
 
 /* Video Play Button */
-.basic-3 .video-play-button {
+.basic-3 .cards-1 .video-play-button {
 	position: absolute;
 	z-index: 10;
 	top: 50%;
@@ -1235,7 +1235,7 @@ input[type='checkbox'] {
 	transform: translateX(-50%) translateY(-50%);
 }
   
-.basic-3 .video-play-button:before {
+.basic-3 .cards-1 .video-play-button:before {
 	content: "";
 	position: absolute;
 	z-index: 0;
@@ -1252,7 +1252,7 @@ input[type='checkbox'] {
 	transform: translateX(-50%) translateY(-50%);
 }
   
-.basic-3 .video-play-button:after {
+.basic-3 .cards-1 .video-play-button:after {
 	content: "";
 	position: absolute;
 	z-index: 1;
@@ -1269,7 +1269,7 @@ input[type='checkbox'] {
 	transform: translateX(-50%) translateY(-50%);
 }
   
-.basic-3 .video-play-button span {
+.basic-3 .cards-1 .video-play-button span {
 	position: relative;
 	display: block;
 	z-index: 3;
