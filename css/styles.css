@@ -594,7 +594,7 @@ input[type='checkbox'] {
 .tech-slideshow > div {
   height: 200px;
   width: 2526px;
-  background: "images/client-logos.png";
+  background: url(images/client-logos.png);
   position: absolute;
   top: 0;
   left: 0;
